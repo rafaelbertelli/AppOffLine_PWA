@@ -22,7 +22,6 @@ const Mural = (function(_render, Filtro){
     }
 
     function preparaCartao(cartao) {
-        debugger;
         const urlsImagens = Cartao.pegaImagens(cartao);
         urlsImagens.forEach(url => {
             fetch(url).then(resposta => {
